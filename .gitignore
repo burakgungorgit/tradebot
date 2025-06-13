@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ortam dosyaları
+.env
+
+# Log ve geçici dosyalar
+log.txt
+*.log
+
+# Alım-satım geçmişi
+trades.csv
+
+# Durum dosyası (kullanmıyorsan da yedek tutabiliriz)
+state.json
+
+# Jupyter ve diğer editör önbellekleri
+.ipynb_checkpoints/
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Virtual environment klasörü
+venv/
+.env/

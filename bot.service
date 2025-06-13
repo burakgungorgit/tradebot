@@ -1,0 +1,15 @@
+[Unit]
+Description=AVAX Al-Sat Botu
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/ubuntu/avax-bot/bot.py
+WorkingDirectory=/home/ubuntu/avax-bot
+StandardOutput=file:/home/ubuntu/avax-bot/log.txt
+StandardError=file:/home/ubuntu/avax-bot/log.txt
+Restart=always
+User=ubuntu
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
